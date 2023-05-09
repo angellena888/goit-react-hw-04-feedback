@@ -11,7 +11,6 @@ export function App() {
   const [bad, setBad] = useState(0);
 
   const options = Object.keys({ good, neutral, bad });
-
   const totalFeedback = good + neutral + bad;
 
   const onLeaveFeedback = e => {
