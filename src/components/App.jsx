@@ -16,7 +16,6 @@ export function App() {
   const onLeaveFeedback = e => {
     const name = e.target.name;
 
-    // eslint-disable-next-line
     switch (name) {
       case 'good':
         setGood(prevState => prevState + 1);
@@ -26,6 +25,10 @@ export function App() {
         break;
       case 'neutral':
         setNeutral(prevState => prevState + 1);
+        break;
+      
+      default:
+        break;
     }
   };
   
